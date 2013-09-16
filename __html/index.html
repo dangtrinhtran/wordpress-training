@@ -9,99 +9,322 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
+        <div id="container">
+        <header>
+            <section class="container">
+                <div id="header">
+                    <ul>
+                        <li class="logo clearfix">
+                            <ul>                              
+                                <li class="col-md-6"><img src="img/logo.png" alt="logo"></li>
+                                <li class="col-md-6">
+                                    <div align="right">
+                                        <p>Contact US by the telephone number bellow</p>
+                                        <p><a href="#">12 <span>(0) 12</span>34 567890</a><p>
+                                    <ul class="nav nav-pills">
+                                        <li class="active"><a href="#">HOME</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">DONATE</a></li>
+                                        <li><a href="#">VIDEO</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                                    </ul>  
+                                    </div>
+                                </li>                             
+                            </ul>
+                        </li>
+                        <li class="menu">
+                            <ul class="nav nav-pills">
+                                        <li class="active"><a href="#">HOME</a></li>
+                                        <li><a href="#">DONATE</a></li>
+                                        <li><a href="#">ABOUT US</a></li>
+                                        <li><a href="#">TOUR</a></li>
+                                        <li><a href="#">NATURE</a></li>
+                                        <li><a href="#">TIPS</a></li>
+                                        <li><a href="#">CONTACT US</a></li>
+                             </ul>   
+                        </li>
+                    </ul>
+                </div>
+            </section>  
+        </header>      
+        <!--main body of #main-->
+        <div id="main" role="main">
+            <section class="container">
+                <div class="row">
+                    <div id="content" class="col-md-9">
+                        <div id="banner">
+                            <div id="slide" class="clearfix">
+                                   <img class="col-md-8" src="img/banner.jpg" alt="banner" />                       
+                                   <div id="new_tours_wrap" class="col-md-4">
+                                        <div id="new_tours">
+                                            <p id="our_new_tours">Our<span>New tours</span></p>
+                                            <p id="intro">
+                                                Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
+                                                <a href="#" class="read_more">Continue reading...</a>
+                                            </p>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>
+                                            <ul id="nav_slide">
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                            </ul>
+                                        </div><!--end #new_tours-->
+                                    </div><!--end #new_tours_wrap-->
+                                </div><!-- #slide-->
+                                <div id="weclcome">
+                                    <h1 class="uppercase">Lorem ipsum dolor sit amet</h1>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+                                    <p>
+                                        Blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis <a href="#" class="bold">tutorials guides</a>.
+                                    </p>
 
-      <hr>
+                                    <img src="images/people.png" alt="people" />
+                                </div><!-- #welcome-->
+                            </div><!-- #banner-->
+                            <div id="post_content">
+                                <ul class="nav nav-tabs" id="myTab" >
+                                            <li class="active col-md-4"><a href="#random" data-toggle="tab">Random</a></li>
+                                            <li class="col-md-4"><a href="#news" data-toggle="tab">Recent</a></li>
+                                            <li class="col-md-4"><a href="#popular" data-toggle="tab">Poppular</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="random" class="tab-pane fade">
+                                                <ul>
+                                                    <li class="post-item">
+                                                        <a href="#"><img src="img/post_item_1.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Lorem ipsum dolor</a></h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_2.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Sed diam nonummy</a></h3>
+                                                        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_3.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Nam liber tempor</a></h3>
+                                                        <p>Nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_5.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Duis autem vel</a></h3>
+                                                        <p>Legere me lius quod ii est etiam processus dynamicus, qui seacula quarta decima et quinta decima. Modo typi luptatum zzril delenit augue.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_6.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Eodem modo typi</a></h3>
+                                                        <p>Anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                                                    </li>						
+                                                </ul>
+                                            </div>
 
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+                                            <div id="news" class="tab-pane fade">
+                                                <ul>
+                                                    <li class="post-item">
+                                                        <a href="#"><img src="img/post_item_6.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Lorem ipsum dolor</a></h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_5.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Sed diam nonummy</a></h3>
+                                                        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_1.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Nam liber tempor</a></h3>
+                                                        <p>Nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_3.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Duis autem vel</a></h3>
+                                                        <p>Legere me lius quod ii est etiam processus dynamicus, qui seacula quarta decima et quinta decima. Modo typi luptatum zzril delenit augue.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_2.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Eodem modo typi</a></h3>
+                                                        <p>Anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                                                    </li>						
+                                                </ul>
+                                            </div>
+
+                                            <div id="popular" class="tab-pane fade">
+                                                <ul>
+                                                    <li class="post-item">
+                                                        <a href="#"><img src="img/post_item_3.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Lorem ipsum dolor</a></h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_1.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Sed diam nonummy</a></h3>
+                                                        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_6.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Nam liber tempor</a></h3>
+                                                        <p>Nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_5.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Duis autem vel</a></h3>
+                                                        <p>Legere me lius quod ii est etiam processus dynamicus, qui seacula quarta decima et quinta decima. Modo typi luptatum zzril delenit augue.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_2.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Eodem modo typi</a></h3>
+                                                        <p>Anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                                                    </li>						
+                                                </ul>
+                                            </div>
+                                        </div><!--End #tab-content-->
+                            </div><!-- #post_content-->  
+                           </div><!--End #content-->
+                        <div id="sidebar" class="col-md-3">
+                                <div id="holiday">
+                                    <h3 class="uppercase bold">Holiday search</h3>
+                                    <p class="chosse">Chọn nơi bạn muốn tham quan :</p>
+
+                                    <form action="">
+                                        <p><input type="text" value="Chọn khu vực ..." /></p>
+                                        <p><input type="text" value="Chọn ngày du lịch ..." /></p>
+                                        <p><input type="text" value="Chọn chủ đề ..." /></p>
+                                        <p><input type="text" value="Chọn mức giá ..." /></p>
+                                        <p><input type="submit" value="Search holidays" class="uppercase submit" /></p>
+                                    </form>
+                                </div><!--end #holiday-->
+
+                                <div id="quick">
+                                    <h3 class="uppercase bold">Quick search</h3>
+                                    <p class="choose">Tìm thông tin nơi bạn tham quan :</p>
+
+                                    <form action="">
+                                        <p><input type="text" value="Country/Code..." class="short" /></p>
+                                        <p><input type="submit" value="Search" class="uppercase submit" /></p>
+                                    </form>
+                                </div><!--end #quick-->
+
+                                <div id="newsletter">
+                                    <h3 class="uppercase bold">Newsletter search</h3>
+                                    <p class="choose">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet :</p>
+
+                                    <form action="">
+                                        <p><input type="text" value="Country/Code ..." /></p>
+                                        <p><input type="text" value="Search ..." class="short" /></p>
+                                        <p><input type="submit" value="Sign up" class="uppercase submit" /></p>
+                                    </form>
+                                </div><!--end #newsletter-->
+
+                                <div id="lastest_new">
+                                    <h3 class="uppercase">Lastest new</h3>
+
+                                    <ul id="new">
+                                        <li>
+                                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut claritatem. Investigationes.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                            <p>
+                                                Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                            <p>
+                                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div><!--end #lastest_new-->
+                        </div><!-- #sidebar-->
+                </div><!--End .row-->
+            </section>
+        </div><!--End #main-->
+        <!--End main body of #main-->
+        <footer>
+            <section class="container">
+                <div id="info_footer">
+                    <h3 id="title">
+                    Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
+                    </h3>
+                <ul id="info">
+                    <li id="twitter">
+                        <h3 class="uppercase bold">Follow on twitter</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+                        </p>
+                        <a href="#"><img src="images/face.jpg" alt="facebook" /></a>
+                    </li>
+
+                    <li id="link">
+                        <h3 class="uppercase bold">liên kết</h3>
+
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Duis autem</a></li>
+                            <li><a href="#">Typi non habent</a></li>
+                            <li><a href="#">Odio dignissim</a></li>
+                            <li><a href="#">Accumsan et</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Dolor sit amet</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Donate</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">BBC Vietnamese</a></li>
+                            <li><a href="#">Quarta decima et</a></li>
+                            <li><a href="#">Legere me lius</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li id="contact">
+                        <h3 class="uppercase bold">Contact Us</h3>
+
+                        <p id="tel_number">
+                            <span class="bold">Tel :</span> 12345 67890
+                        </p>
+
+                        <p id="email">
+                            <span class="bold">Email :</span> jerry2099tom@gmail.com<script type="text/javascript">
+                /* <![CDATA[ */
+                (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+                /* ]]> */
+                </script>
+                        </p>
+
+                        <p id="address">
+                            Nature tours. Your city. <span>Your state. 123 456 789</span>
+                        </p>
+                    </li>
+                </ul>
+                </div><!--end #info_footer-->
+
+                <ul id="coryright">                  
+                        <li>&copy; Nature tours 2013.</li>
+                        <li>Copyright and design by <span class="uppercase bold">izwebz.com</span>. All right reserved.</li>                   
+                </ul>
+            </section>
+        </footer>
+    </div> <!-- /End #container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
