@@ -60,7 +60,12 @@
                     <div id="content" class="col-md-9">
                         <div id="banner">
                             <div id="slide" class="clearfix">
-                                   <img class="col-md-8" src="img/banner.jpg" alt="banner" />                       
+                                <div id="s4">
+                                   <img class="col-md-8" src="img/banner.jpg" alt="banner" /> 
+                                   <img width="200" height="200" src="http://malsup.github.com/images/beach1.jpg" style="position: absolute; top: 200px; left: 0px; display: none; z-index: 8; opacity: 1; height: 0px; width: 200px;"></img>
+                                   <img width="200" height="200" src="http://malsup.github.com/images/beach2.jpg" style="position: absolute; top: 200px; left: 0px; display: none; z-index: 8; height: 0px; opacity: 1; width: 200px;"></img>
+                                   <img width="200" height="200" src="http://malsup.github.com/images/beach3.jpg" style="position: absolute; top: 200px; left: 0px; display: none; z-index: 8; height: 0px; opacity: 1; width: 200px;"></img>
+                                </div>
                                    <div id="new_tours_wrap" class="col-md-4">
                                         <div id="new_tours">
                                             <p id="our_new_tours">Our<span>New tours</span></p>
@@ -69,11 +74,11 @@
                                                 <a href="#" class="read_more">Continue reading...</a>
                                             </p>
 
-                                            <ul id="nav_slide">
-                                                <li><a href="#">1</a></li>
-                                                <li><a href="#">2</a></li>
-                                                <li><a href="#">3</a></li>
-                                                <li><a href="#">4</a></li>
+                                            <ul id="nav_slide" class="nav">
+                                                <li><a class="" href="#">1</a></li>
+                                                <li><a class="" href="#">2</a></li>
+                                                <li><a class="" href="#">3</a></li>
+                                                <li><a class="" href="#">4</a></li>
                                             </ul>
                                         </div><!--end #new_tours-->
                                     </div><!--end #new_tours_wrap-->
@@ -111,6 +116,11 @@
                                                         <a href="#"><img src="img/post_item_3.jpg" alt="post item" /></a>
                                                         <h3><a href="#">Nam liber tempor</a></h3>
                                                         <p>Nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_4.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Ut wisi enim</a></h3>
+                                                        <p>Lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.</p>
                                                     </li>
                                                     <li>
                                                         <a href="#"><img src="img/post_item_5.jpg" alt="post item" /></a>
@@ -151,7 +161,12 @@
                                                         <a href="#"><img src="img/post_item_2.jpg" alt="post item" /></a>
                                                         <h3><a href="#">Eodem modo typi</a></h3>
                                                         <p>Anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-                                                    </li>						
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_4.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Ut wisi enim</a></h3>
+                                                        <p>Lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.</p>
+                                                    </li>
                                                 </ul>
                                             </div>
 
@@ -166,6 +181,11 @@
                                                         <a href="#"><img src="img/post_item_1.jpg" alt="post item" /></a>
                                                         <h3><a href="#">Sed diam nonummy</a></h3>
                                                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><img src="img/post_item_4.jpg" alt="post item" /></a>
+                                                        <h3><a href="#">Ut wisi enim</a></h3>
+                                                        <p>Lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur.</p>
                                                     </li>
                                                     <li>
                                                         <a href="#"><img src="img/post_item_6.jpg" alt="post item" /></a>
@@ -190,13 +210,13 @@
                         <div id="sidebar" class="col-md-3">
                                 <div id="holiday">
                                     <h3 class="uppercase bold">Holiday search</h3>
-                                    <p class="chosse">Chọn nơi bạn muốn tham quan :</p>
+                                    <p class="choose">Chọn nơi bạn muốn tham quan :</p>
 
                                     <form action="">
-                                        <p><input type="text" value="Chọn khu vực ..." /></p>
-                                        <p><input type="text" value="Chọn ngày du lịch ..." /></p>
-                                        <p><input type="text" value="Chọn chủ đề ..." /></p>
-                                        <p><input type="text" value="Chọn mức giá ..." /></p>
+                                        <p><input type="text" placeholder="Chọn khu vực ..." /></p>
+                                        <p><input type="text" placeholder="Chọn ngày du lịch ..." /></p>
+                                        <p><input type="text" placeholder="Chọn chủ đề ..." /></p>
+                                        <p><input type="text" placeholder="Chọn mức giá ..." /></p>
                                         <p><input type="submit" value="Search holidays" class="uppercase submit" /></p>
                                     </form>
                                 </div><!--end #holiday-->
@@ -206,7 +226,7 @@
                                     <p class="choose">Tìm thông tin nơi bạn tham quan :</p>
 
                                     <form action="">
-                                        <p><input type="text" value="Country/Code..." class="short" /></p>
+                                        <p><input type="text" placeholder="Country/Code..." class="short" /></p>
                                         <p><input type="submit" value="Search" class="uppercase submit" /></p>
                                     </form>
                                 </div><!--end #quick-->
@@ -216,14 +236,14 @@
                                     <p class="choose">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet :</p>
 
                                     <form action="">
-                                        <p><input type="text" value="Country/Code ..." /></p>
-                                        <p><input type="text" value="Search ..." class="short" /></p>
+                                        <p><input type="text" placeholder="Country/Code ..." /></p>
+                                        <p><input type="text" placeholder="Search ..." class="short" /></p>
                                         <p><input type="submit" value="Sign up" class="uppercase submit" /></p>
                                     </form>
                                 </div><!--end #newsletter-->
 
                                 <div id="lastest_new">
-                                    <h3 class="uppercase">Lastest new</h3>
+                                    <h3 class="uppercase bold">Lastest new</h3>
 
                                     <ul id="new">
                                         <li>
@@ -265,7 +285,7 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
                         </p>
-                        <a href="#"><img src="images/face.jpg" alt="facebook" /></a>
+                        <a href="#"><img src="img/face.jpg" alt="facebook" /></a>
                     </li>
 
                     <li id="link">
@@ -300,11 +320,11 @@
                         <h3 class="uppercase bold">Contact Us</h3>
 
                         <p id="tel_number">
-                            <span class="bold">Tel :</span> 12345 67890
+                            <span class="bold">Tel :</span> 01699169049
                         </p>
 
                         <p id="email">
-                            <span class="bold">Email :</span> jerry2099tom@gmail.com<script type="text/javascript">
+                            <span class="bold">Email :</span> tien06051992@gmail.com<script type="text/javascript">
                 /* <![CDATA[ */
                 (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
                 /* ]]> */
@@ -328,7 +348,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-
+        <script src="js/libs/cycleall.js"></script>
         <script src="js/main.js"></script>
 
         <script>

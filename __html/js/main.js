@@ -4,5 +4,10 @@ jQuery(document).ready(function($) {
     e.preventDefault();
      $(this).tab('show');
     });
-    
+    $('#s4').before('<div id="nav_slide">').cycle({ 
+    fx:     'turnDown', 
+    speed:  'fast', 
+    timeout: 0, 
+    pager:  '#nav' 
+});
 });
