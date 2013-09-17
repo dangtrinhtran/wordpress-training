@@ -59,30 +59,35 @@
                 <div class="row">
                     <div id="content" class="col-md-9">
                         <div id="banner">
-                            <div id="slide" class="clearfix">
-                                <div id="s4">
-                                   <img class="col-md-8" src="img/banner.jpg" alt="banner" /> 
-                                   <img width="200" height="200" src="http://malsup.github.com/images/beach1.jpg" style="position: absolute; top: 200px; left: 0px; display: none; z-index: 8; opacity: 1; height: 0px; width: 200px;"></img>
-                                   <img width="200" height="200" src="http://malsup.github.com/images/beach2.jpg" style="position: absolute; top: 200px; left: 0px; display: none; z-index: 8; height: 0px; opacity: 1; width: 200px;"></img>
-                                   <img width="200" height="200" src="http://malsup.github.com/images/beach3.jpg" style="position: absolute; top: 200px; left: 0px; display: none; z-index: 8; height: 0px; opacity: 1; width: 200px;"></img>
-                                </div>
-                                   <div id="new_tours_wrap" class="col-md-4">
-                                        <div id="new_tours">
-                                            <p id="our_new_tours">Our<span>New tours</span></p>
-                                            <p id="intro">
-                                                Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
-                                                <a href="#" class="read_more">Continue reading...</a>
-                                            </p>
+                            <div id="slide" class="clearfix"> 
+                                <div class="row">
+                                    <div class="col-md-8 slideshow">
+                                        <ul>
+                                            <li><img src="img/banner.jpg" alt="banner" /></li> 
+                                            <li><img src="img/bear.jpg" alt="bear" /></li>  
+                                            <li><img src="img/snake.jpg" alt="snake" /></li>
+                                            <li><img src="img/horse.jpg" alt="horse" /></li>
+                                        </ul>   
+                                    </div>
+                                       <div id="new_tours_wrap" class="col-md-4">
+                                            <div id="new_tours">
+                                                <p id="our_new_tours">Our<span>New tours</span></p>
+                                                <p id="intro">
+                                                    Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
+                                                    <a href="#" class="read_more">Continue reading...</a>
+                                                </p>
 
-                                            <ul id="nav_slide" class="nav">
-                                                <li><a class="" href="#">1</a></li>
-                                                <li><a class="" href="#">2</a></li>
-                                                <li><a class="" href="#">3</a></li>
-                                                <li><a class="" href="#">4</a></li>
-                                            </ul>
-                                        </div><!--end #new_tours-->
-                                    </div><!--end #new_tours_wrap-->
-                                </div><!-- #slide-->
+                                                <ul id="nav_slide">
+                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(0)">1</a></li>
+                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(1)">2</a></li>
+                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(2)">3</a></li>
+                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(3)">4</a></li>
+                                                </ul>
+                                            </div><!--end #new_tours-->
+                                        </div><!--end #new_tours_wrap-->
+                                    </div><!-- #slide-->
+                            </div>
+                            
                                 <div id="welcome">
                                     <h1 class="uppercase">Lorem ipsum dolor sit amet</h1>
 
@@ -344,14 +349,18 @@
                 </ul>
             </section>
         </footer>
-    </div> <!-- /End #container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    </div> <!-- /End #container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/libs/cycleall.js"></script>
+        
+        <script language="Javascript" type="text/javascript" src="js/libs/jquery-1.4.1.js"></script>
+        <script language="Javascript" type="text/javascript" src="js/libs/jquery.blinds-0.9.js"></script>
+        
         <script src="js/main.js"></script>
 
-        <script>
+        <script type="text/javascript">
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';

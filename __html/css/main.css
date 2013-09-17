@@ -242,6 +242,7 @@ padding-right: 0px;
 
 #main #content #banner #slide #new_tours {
 padding: 5px;
+display: block;
 }
 
 #main #content #banner #slide #new_tours p#our_new_tours {
@@ -288,7 +289,9 @@ background: transparent url(../img/nav_banner_bg.png) no-repeat top left;
 margin-right: 9px;
 }
  
-#main #content #banner #slide #new_tours ul#nav_slide li a:hover {
+#main #content #banner #slide #new_tours ul#nav_slide li a:hover,
+#main #content #banner #slide #new_tours ul#nav_slide li a:active,
+#main #content #banner #slide #new_tours ul#nav_slide li a:focus {
 width: 27px; 
 height: 26px; line-height: 26px;
 background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
