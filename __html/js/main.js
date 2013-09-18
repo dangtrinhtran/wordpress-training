@@ -1,17 +1,18 @@
 jQuery(document).ready(function($) {  
-//<<<<<<< HEAD
-    $('#myTab a[href="#random"]').tab('show');
-//    $(window).load(function () {
-    // start the slideshow
-    $('.slideshow').blinds();
-   // });
-//=======
     $('#myTab a').click(function (e) {
 	  e.preventDefault();
 	  $(this).tab('show');
 	});
-	$('#myTab li:eq(1) a').tab('show');
+	$('#myTab li:eq(0) a').tab('show');
     // start the slideshow
     $('.slideshow').blinds();
-//>>>>>>> 0ca5e37aa22912c65d9ac85cf33075fd52e61ed1
+    
+    // slide text follow images
+    $('#new_tours_wrap #new_tours .new_tours_post:not(:first)').hide(); 
+    $('#new_tours_wrap #new_tours ul li a').click(function (e){
+        var num = $(this).text();
+        $('#new_tours_wrap #new_tours div.new_tours_post').hide();
+        $('#new_tours_wrap #new_tours div.new_tours_post:eq('+ (num -1) +')').show();
+    });
+    
 });
