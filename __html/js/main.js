@@ -8,11 +8,16 @@ jQuery(document).ready(function($) {
     $('.slideshow').blinds();
     
     // slide text follow images
-    $('#new_tours_wrap #new_tours .new_tours_post:not(:first)').hide(); 
+    $('#new_tours_wrap #new_tours .new_tours_post:not(:first)').hide();
     $('#new_tours_wrap #new_tours ul li a').click(function (e){
         var num = $(this).text();
         $('#new_tours_wrap #new_tours div.new_tours_post').hide();
         $('#new_tours_wrap #new_tours div.new_tours_post:eq('+ (num -1) +')').show();
     });
-    
+//    setInterval(function (){     
+//        $('#new_tours_wrap #new_tours ul li a').trigger('click').parent().next();
+//    }, 2000);
+        var listQuizzesSection = document.getElementsByClassName('#new_tours_wrap #new_tours ul');
+        alert(listQuizzesSection.length);
 });
+
