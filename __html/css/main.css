@@ -308,7 +308,12 @@ height: 26px; line-height: 26px;
 background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
 text-decoration: none;
 }
-
+#main #content #banner #slide #new_tours ul#nav_slide li a.active {
+    width: 27px; 
+    height: 26px; line-height: 26px;
+    background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
+    text-decoration: none;
+}
 /****welcome*****/
 
 #main #content #banner #welcome{

@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {  
-    $('#myTab a').click(function (e) {
+    $('#myTab a').click(function(e) {
 	  e.preventDefault();
 	  $(this).tab('show');
 	});
@@ -9,15 +9,31 @@ jQuery(document).ready(function($) {
     
     // slide text follow images
     $('#new_tours_wrap #new_tours .new_tours_post:not(:first)').hide();
-    $('#new_tours_wrap #new_tours ul li a').click(function (e){
-        var num = $(this).text();
-        $('#new_tours_wrap #new_tours div.new_tours_post').hide();
-        $('#new_tours_wrap #new_tours div.new_tours_post:eq('+ (num -1) +')').show();
+    $('#new_tours_wrap #new_tours ul li a').click(function(e){
+    var num = $(this).text();
+    $('#new_tours_wrap #new_tours div.new_tours_post').hide();
+    $('#new_tours_wrap #new_tours div.new_tours_post:eq('+ (num - 1) +')').show();
     });
-//    setInterval(function (){     
-//        $('#new_tours_wrap #new_tours ul li a').trigger('click').parent().next();
-//    }, 2000);
-        var listQuizzesSection = document.getElementsByClassName('#new_tours_wrap #new_tours ul');
-        alert(listQuizzesSection.length);
+    // auto slide
+        var listQuizzesSection = document.getElementById('new_tours_wrap');
+        var numchil = listQuizzesSection.getElementsByTagName('li');       
+        var licounter = 0;
+        setInterval(function(){
+        setTimeout(function() {          
+           if (licounter < numchil.length) {
+                    $('#new_tours_wrap #new_tours ul li a').removeClass('active');
+                    $('#new_tours_wrap #new_tours ul li:eq(' + licounter + ') a').trigger('click');
+                    $('#new_tours_wrap #new_tours ul li:eq(' + licounter + ') a').addClass('active');
+                    //alert(licounter);
+                    licounter++;
+           } else {
+               licounter = 0;
+           }
+        }, 2000);
+        },2000);   
+      // clear background nav button
+      $('#new_tours_wrap #new_tours ul li a').click(function(e){
+          $('#new_tours_wrap #new_tours ul li a').removeClass('active');
+      });
 });
 
