@@ -15,6 +15,7 @@ Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, editor-
    Author: Rony<mrtrandangtrinh@gmail.com>
    ========================================================================== */
 
+
 /* ==========================================================================
    RESET SETTING
    ========================================================================== */
@@ -105,8 +106,8 @@ cursor: pointer;
     padding: 0px;
 }
 header {
-    height: 151px;
-    background: url("../img/header_bg.jpg") repeat-x;
+    height: 155px;
+    background: url("../img/header_bg.png");
     width: 100%;
     
 }
@@ -133,7 +134,7 @@ header {
     font-family: Tahoma;
     font-weight: 600;
     color: #18991e;
-    padding: 10px 10px;
+    padding: 5px 10px;
     margin : 0px 5px;
     font-size: 13px;
 }
@@ -201,28 +202,36 @@ background: -o-linear-gradient(top,  #66c13e 0%,#0c932f 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #66c13e 0%,#0c932f 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #66c13e 0%,#0c932f 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66c13e', endColorstr='#0c932f',GradientType=0 ); /* IE6-9 */
-    border-radius: 5px;
-    border-top: 1px solid #0c932f;
+border-radius: 5px;
+border: 1px solid #0c932f;
+border-bottom: 0.5px solid #0c932f;
 }
 #header .menu .nav a{
     font-family: Tahoma;
     font-weight: 600;
     color: white;
     font-size: 15px;
-    padding: 10px 13px;
-    margin: 0px 15px;
+    padding: 14px 20px;
+    margin: 0px -1px;
     border-radius: 0px;
 }
-#header .menu .nav a:hover,#header .menu .nav a:focus,#header .menu .nav a:active{
+#header .menu .nav li:first-child a{
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 0px; 
+}
+#header .menu .nav a:focus,#header .menu .nav a:active{
     background-color: white;
     color: #18991e;
 }
 
-#header .menu .nav-pills li.active a, .nav-pills li.active a:hover,#header .menu .nav-pills li.active a:focus{
+#header .menu .nav-pills li.active a, #header .menu .nav-pills li.active a:focus{
     background-color: white;
     color: #18991e;
 }
-
+#header .menu .nav a:hover{
+    background-color: #f1f1f1;
+    color: #18991e;
+}
 /*********MAIN********/
 body{
     background: url("../img/body_bg.jpg");
@@ -230,7 +239,6 @@ body{
 
 #main{
     margin-top: 33px;
-    overflow: hidden;
     border-radius: 6px;
     behaviour: url(border-radius.htc);
 }
@@ -238,6 +246,8 @@ body{
 #main #content{
     background: white;
     padding: 16px;
+    height: 1040px;
+    border-radius: 5px 0px 0px 5px;
 }
 /********BANNER*******/
 #main #content #banner {
@@ -246,8 +256,8 @@ width: 100%;
 
 #main #content #banner #slide {
 width: 100%; height: 266px;
-overflow: hidden;
 background: #251d14;
+border-radius: 5px;
 }
 
 #main #content #banner #slide .col-md-8 {
@@ -313,7 +323,12 @@ height: 26px; line-height: 26px;
 background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
 text-decoration: none;
 }
-
+#main #content #banner #slide #new_tours ul#nav_slide li a.active {
+    width: 27px; 
+    height: 26px; line-height: 26px;
+    background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
+    text-decoration: none;
+}
 /****welcome*****/
 
 #main #content #banner #welcome{
@@ -357,7 +372,6 @@ top: -30px; right: 46px;
 }
 
 #main #content #post_content .nav {
-    overflow: hidden;
     width: 100%;
     border-radius: 6px;
     behaviour: url(border-radius.htc);
@@ -467,7 +481,7 @@ top: -30px; right: 46px;
     background: #e9e6df;
 }
 
-#main #content #post_content .tab-content .tab-pane .post-item h3 a {
+#main #content #post_content .tab-content .tab-pane .post-item a h3{
     font-family: "arial", tahoma, sans-serif;
     font-size: 14px;
     color: #3a3731;
@@ -475,7 +489,7 @@ top: -30px; right: 46px;
     font-weight: 600;
 }
  
-#main #content #post_content .tab-content .tab-pane .post-item h3 a:hover {
+#main #content #post_content .tab-content .tab-pane .post-item a h3:hover {
     color: #0c932f;
 }
 
@@ -491,13 +505,17 @@ top: -30px; right: 46px;
 /*******SIDE BAR******/
 #main #sidebar{
     background: #f4f2ec;
+    height: 1040px;
+    border-radius: 0px 5px 5px 0px;
 }
 
-#main #sidebar #holiday, 
 #main #sidebar #quick, 
 #main #sidebar #newsletter, 
 #main #sidebar #lastest_new {
-    padding: 20px 10px 20px 0px;
+    padding: 25px 10px 25px 0px;
+}
+#main #sidebar #holiday{
+    padding: 25px 10px 0px 0px;
 }
 
 #main .row #sidebar h3 {
@@ -547,7 +565,7 @@ top: -30px; right: 46px;
 #sidebar #quick input.submit, 
 #sidebar #newsletter input.submit {
     text-align: left;
-    height: 28px; line-height: 28px;
+    height: 26px; line-height: 26px;
     font-family: "Trebuchet MS", tahoma, arial, sans-serif;
     font-size: 15px; 
     color: white;
@@ -567,21 +585,33 @@ top: -30px; right: 46px;
     float: left;
     margin-right: 10px;
 }
+hr{
+    background-color: #e1dbce;
+    height: 1px;
+    margin: 0px -15px;
+}
 
 #sidebar #lastest_new ul#new li {
-    margin-top: 20px;
+    margin-top: 25px;
 }
- 
-#sidebar #lastest_new ul#new li h4 a, #sidebar #lastest_new ul#new li p {
+
+#sidebar #lastest_new ul#new li:first-child {
+    margin-top: 15px;
+} 
+#sidebar #lastest_new ul#new li a h4, #sidebar #lastest_new ul#new li p {
     font-family: "arial", tahoma, sans-serif;
     font-size: 14px;
     color: #3f3b30;
+
 }
  
-#sidebar #lastest_new ul#new li h4 a:hover {
+#sidebar #lastest_new ul#new li a h4:hover {
     color: #0c932f;
 }
- 
+
+#sidebar #lastest_new ul#new li.active a h4{
+    color: #0c932f;
+} 
 #sidebar #lastest_new ul#new li p {
     font-size: 12px;
 } 
@@ -616,6 +646,7 @@ background: -ms-linear-gradient(top,  #999387 0%,#6f685e 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #999387 0%,#6f685e 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999387', endColorstr='#6f685e',GradientType=0 ); /* IE6-8 */
 border-bottom: 2px solid #635543;
+text-shadow: 3px 2px 2px #000;
 }
 
 #info_footer ul#info {
@@ -623,7 +654,6 @@ overflow: hidden;
 }
 
 #info_footer ul#info > li {
-float: left;
 border-right: 1px solid #d8d6ce;
 }
 
@@ -631,6 +661,7 @@ border-right: 1px solid #d8d6ce;
 font-family: "tahoma", arial, sans-serif;
 font-size: 14px;
 color: #64522a;
+padding-bottom: 15px;
 }
  
 #info_footer ul#info li p {
@@ -640,8 +671,7 @@ color: #757268;
 }
 
 #info_footer ul#info li#twitter {
-width: 230px;
-margin: 17px;
+margin: 17px 0px;
 padding-right: 10px;
 }
  
@@ -651,8 +681,8 @@ margin: 13px 0px 18px 0px;
 
 #info_footer ul#info li#link {
 overflow: hidden;
-margin: 17px;
-padding-right: 10px;
+margin: 17px 0px;
+padding-left: 17px;
 }
 
 #info_footer ul#info li#link ul {
@@ -676,7 +706,7 @@ color: black;
 }
 
 #info_footer ul#info li#contact {
-margin: 17px;
+margin: 17px 0px;
 border: none;
 }
  
@@ -697,4 +727,7 @@ margin-bottom: 36px;
 ul#coryright li {
 font-family: "arial", tahoma, sans-serif;
 font-size: 11px;
+}
+ul#coryright li:first-child{
+    font-weight: 600;
 }
