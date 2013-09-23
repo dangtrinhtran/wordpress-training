@@ -22,7 +22,7 @@ global $sTemplateURL;
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
                                 </p>
-                                <a href="#"><img src="img/face.jpg" alt="facebook" /></a>
+                                <a href="#"><img src="<?php echo $sTemplateURL ?>/img/face.jpg" alt="facebook" /></a>
                             </li>
 
                             <li id="link" class="col-md-6">

@@ -265,6 +265,9 @@ padding-left: 0px;
 padding-right: 0px;
 }
 
+#main #content #banner #slide .col-md-8 img {
+border-radius: 5px 0px 0px 5px;
+}
 
 #main #content #banner #slide #new_tours {
 padding: 5px;
