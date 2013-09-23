@@ -1,3 +1,15 @@
+<?php
+/**
+ * The Header for our theme.
+ * @author Mr Rony<mrtrandangtrinh@gmail.com>
+ */
+
+global $sTemplateURL;
+$sTemplateURL = get_template_directory_uri();
+
+define('HTML_MODE', (!empty($_GET['htmlmode']) ? '' : '.min') );
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -9,10 +21,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="stylesheet" href="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+        <script src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <div id="container">
@@ -22,7 +34,7 @@
                     <ul>
                         <li class="logo clearfix">
                             <ul>                              
-                                <li class="col-md-6"><a href="#"><img src="img/logo.png" alt="logo"></a></li>
+                                <li class="col-md-6"><a href="#"><img src="<?php echo $sTemplateURL; ?>/img/logo.png" alt="logo"></a></li>
                                 <li class="col-md-6">
                                     <div align="right">
                                         <p>Contact US by the telephone number bellow</p>

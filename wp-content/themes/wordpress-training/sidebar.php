@@ -38,21 +38,21 @@
 
                                     <ul id="new">
                                         <li>
-                                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                            <a href="#"><h4>Lorem ipsum dolor sit amet</h4></a>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut claritatem. Investigationes.
                                             </p>
                                         </li>
 
                                         <li>
-                                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                            <a href="#"><h4>Lorem ipsum dolor sit amet</h4></a>
                                             <p>
                                                 Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.
                                             </p>
                                         </li>
 
                                         <li>
-                                            <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                                            <a href="#"><h4>Lorem ipsum dolor sit amet</h4></a>
                                             <p>
                                                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.
                                             </p>

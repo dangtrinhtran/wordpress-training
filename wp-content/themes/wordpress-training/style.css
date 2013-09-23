@@ -107,7 +107,7 @@ cursor: pointer;
 }
 header {
     height: 155px;
-    background: url("../img/header_bg.png");
+    background: url("img/header_bg.png");
     width: 100%;
     
 }
@@ -234,7 +234,7 @@ border-bottom: 0.5px solid #0c932f;
 }
 /*********MAIN********/
 body{
-    background: url("../img/body_bg.jpg");
+    background: url("img/body_bg.jpg");
 }
 
 #main{
@@ -311,7 +311,7 @@ text-align: center; line-height: 22px;
 font-family: "arial", tahoma, sans-serif;
 font-size: 12px;
 color: #cbcbcb;
-background: transparent url(../img/nav_banner_bg.png) no-repeat top left;
+background: transparent url(img/nav_banner_bg.png) no-repeat top left;
 margin-right: 9px;
 }
  
@@ -320,13 +320,13 @@ margin-right: 9px;
 #main #content #banner #slide #new_tours ul#nav_slide li a:focus {
 width: 27px; 
 height: 26px; line-height: 26px;
-background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
+background: transparent url(img/nav_banner_bg_hover.png) no-repeat top left;
 text-decoration: none;
 }
 #main #content #banner #slide #new_tours ul#nav_slide li a.active {
     width: 27px; 
     height: 26px; line-height: 26px;
-    background: transparent url(../img/nav_banner_bg_hover.png) no-repeat top left;
+    background: transparent url(img/nav_banner_bg_hover.png) no-repeat top left;
     text-decoration: none;
 }
 /****welcome*****/
@@ -537,7 +537,7 @@ top: -30px; right: 46px;
 #sidebar form input {
     margin-top: 19px;
     width: 202px; height: 25px; line-height: 25px;
-    background: url(../img/input_bg.jpg) repeat-x top left;
+    background: url(img/input_bg.jpg) repeat-x top left;
     font-family: "arial", tahoma, sans-serif;
     font-size: 11px;
     color: #999; 
@@ -556,7 +556,7 @@ top: -30px; right: 46px;
     text-align: left;
     line-height: 34px; text-indent: 12px;
     border: none; 
-    background: url(../img/s_holidays_bg.jpg) no-repeat top left;
+    background: url(img/s_holidays_bg.jpg) no-repeat top left;
     font-family: "Trebuchet MS", tahoma, arial, sans-serif;
     font-size: 15px; 
     color: white;
@@ -614,6 +614,7 @@ hr{
 } 
 #sidebar #lastest_new ul#new li p {
     font-size: 12px;
+    padding-top: 3px;
 } 
 
 /********FOOTER********/

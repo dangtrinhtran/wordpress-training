@@ -1,3 +1,14 @@
+<?php
+/**
+ * The template for displaying the footer.
+ * @author Mr Rony<mrtrandangtrinh@gmail.com>
+ */
+
+if( !defined('HTML_MODE') )
+	define('HTML_MODE', (!empty($_GET['htmlmode']) ? '.min' : '') );
+
+global $sTemplateURL;
+?>
 <footer>
             <section class="container">
                 <div id="info_footer">
@@ -73,12 +84,12 @@
         </footer>
     </div> <!-- /End #container -->        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php echo $sTemplateURL; ?>/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
 
-        <script src="js/vendor/bootstrap.min.js"></script>             
-        <script type="text/javascript" src="js/libs/jquery.blinds-0.9.js"></script>       
-        <script src="js/main.js"></script>
+        <script src="<?php echo $sTemplateURL; ?>/js/vendor/bootstrap.min.js"></script>             
+        <script type="text/javascript" src="<?php echo $sTemplateURL; ?>/js/libs/jquery.blinds-0.9.js"></script>       
+        <script src="<?php echo $sTemplateURL; ?>/js/script.js?v=1"></script>
 
         <script type="text/javascript">
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -86,5 +97,6 @@
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));          
         </script>
+        <?php wp_footer(); ?>
     </body>
 </html>
