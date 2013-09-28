@@ -59,4 +59,8 @@
                                         </li>
                                     </ul>
                                 </div><!--end #lastest_new-->
-                        </div><!-- #sidebar-->
+                        
+ <?php if(function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar')) : else : ?>
+                        
+ <?php endif; ?>
+</div><!-- #sidebar-->

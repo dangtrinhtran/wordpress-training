@@ -255,58 +255,71 @@ width: 100%;
 }
 
 #main #content #banner #slide {
-width: 100%; height: 266px;
+width: 100%; 
+height: 266px;
 background: #251d14;
 border-radius: 5px;
+ position: relative;
 }
 
-#main #content #banner #slide .col-md-8 {
-padding-left: 0px;
-padding-right: 0px;
+#main #content #banner #slide .nav_slide{
+    position: absolute;
+    top: 210px;
+    right : 80px;
+    z-index: 99;
+}
+#main #content #banner #slide .banner-header li img{
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: 10px;
 }
 
-#main #content #banner #slide .col-md-8 img {
-border-radius: 5px 0px 0px 5px;
-}
 
-#main #content #banner #slide #new_tours {
+
+#main #content #banner #slide .slide-content {
 padding: 5px;
 display: block;
 }
 
-#main #content #banner #slide #new_tours p.our_new_tours {
+#main #content #banner #slide .banner-header .slide-content p.our_new_tours {
 display: block;
 color: white;
 font-size: 30px;
 }
 
-#main #content #banner #slide #new_tours p.our_new_tours span {
+#main #content #banner #slide .banner-header .slide-content p.our_new_tours span a {
 display: block;
 color: #28b028;
 font-size: 32px;
 }
  
-#main #content #banner #slide #new_tours p.intro {
+#main #content #banner #slide .banner-header .slide-content p.our_new_tours span a:hover{
+    text-decoration: none;
+}
+
+#main #content #banner #slide .banner-header .slide-content p.intro {
 color: white;
 font-family: "arial", tahoma, sans-serif;
 font-size: 12px;
 margin: 5px 0px 12px 0px;
 }
 
-#main #content #banner #slide #new_tours p.intro a.read_more {
+#main #content #banner #slide .banner-header .slide-content p.intro a.read_more {
 color: #28b028; 
 display: block;
 }
  
-#main #content #banner #slide #new_tours p.intro a.read_more:hover {
+#main #content #banner #slide .banner-header .slide-content p.intro a.read_more:hover {
 color: #5383fd;
+text-decoration: none;
 }
 
-#main #content #banner #slide #new_tours ul#nav_slide li {
-display: inline;
+#main #content #banner #slide #nav_slide  {
+
 }
  
-#main #content #banner #slide #new_tours ul#nav_slide li a {
+#main #content #banner #slide #nav_slide a {
+display: inline;
 display: block;
 float: left;
 width: 21px; height: 22px;
@@ -318,15 +331,15 @@ background: transparent url(img/nav_banner_bg.png) no-repeat top left;
 margin-right: 9px;
 }
  
-#main #content #banner #slide #new_tours ul#nav_slide li a:hover,
-#main #content #banner #slide #new_tours ul#nav_slide li a:active,
-#main #content #banner #slide #new_tours ul#nav_slide li a:focus {
+#main #content #banner #slide #nav_slide a:hover,
+#main #content #banner #slide #nav_slide a:active,
+#main #content #banner #slide #nav_slide a:focus {
 width: 27px; 
 height: 26px; line-height: 26px;
 background: transparent url(img/nav_banner_bg_hover.png) no-repeat top left;
 text-decoration: none;
 }
-#main #content #banner #slide #new_tours ul#nav_slide li a.active {
+#main #content #banner #slide #nav_slide a.active {
     width: 27px; 
     height: 26px; line-height: 26px;
     background: transparent url(img/nav_banner_bg_hover.png) no-repeat top left;

@@ -88,7 +88,7 @@ global $sTemplateURL;
 
 
         <script src="<?php echo $sTemplateURL; ?>/js/vendor/bootstrap.min.js"></script>             
-        <script type="text/javascript" src="<?php echo $sTemplateURL; ?>/js/libs/jquery.blinds-0.9.js"></script>       
+        <script type="text/javascript" src="<?php echo $sTemplateURL; ?>/js/libs/jquery.cycle.all.js"></script>       
         <script src="<?php echo $sTemplateURL; ?>/js/script.js?v=1"></script>
 
         <script type="text/javascript">

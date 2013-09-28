@@ -7,68 +7,7 @@
             <section class="container">
                 <div class="row">
                     <div id="content" class="col-md-9">
-                        <div id="banner">
-                            <div id="slide" class="clearfix"> 
-                                <div class="row">
-                                    <div class="col-md-8 slideshow">
-                                        <ul>
-                                            <li><img src="<?php echo $sTemplateURL; ?>/img/banner.jpg" alt="banner" /></li> 
-                                            <li><img src="<?php echo $sTemplateURL; ?>/img/bear.jpg" alt="bear" /></li>  
-                                            <li><img src="<?php echo $sTemplateURL; ?>/img/snake.jpg" alt="snake" /></li>
-                                            <li><img src="<?php echo $sTemplateURL; ?>/img/horse.jpg" alt="horse" /></li>
-                                        </ul>   
-                                    </div>
-                                       <div id="new_tours_wrap" class="col-md-4">
-                                            <div id="new_tours">
-                                                <div class="new_tours_post">
-                                                    <p class="our_new_tours">Our<span>New tours</span></p>
-                                                    <p class="intro">
-                                                        Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
-                                                        <a href="#" class="read_more">Continue reading...</a>
-                                                    </p>
-                                                </div>
-                                                <div class="new_tours_post">
-                                                    <p class="our_new_tours">Our<span>Con Chó</span></p>
-                                                    <p class="intro">
-                                                        Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
-                                                        <a href="#" class="read_more">Continue reading...</a>
-                                                    </p>
-                                                </div>
-                                                <div class="new_tours_post">
-                                                    <p class="our_new_tours">Our<span>Con Mèo</span></p>
-                                                    <p class="intro">
-                                                        Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
-                                                        <a href="#" class="read_more">Continue reading...</a>
-                                                    </p>
-                                                </div>
-                                                <div class="new_tours_post">
-                                                    <p class="our_new_tours">Our<span>Con Cọp</span></p>
-                                                    <p class="intro">
-                                                        Đến với <span class="uppercase">nature tours</span> bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
-                                                        <a href="#" class="read_more">Continue reading...</a>
-                                                    </p>
-                                                </div>
-                                                <ul id="nav_slide">
-                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(0)">1</a></li>
-                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(1)">2</a></li>
-                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(2)">3</a></li>
-                                                    <li><a href="#" onclick="$('.slideshow').blinds_change(3)">4</a></li>
-                                                </ul>
-                                            </div><!--end #new_tours-->
-                                        </div><!--end #new_tours_wrap-->
-                                    </div><!-- #slide-->
-                            </div>
-                            
-                                <div id="welcome">
-                                    <a href="#"><h1 class="uppercase">Lorem ipsum <span>dolor</span> sit amet</h1></a>
-
-                                    <p>
-                                        Blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis <a href="#" class="bold">tutorials guides</a>.
-                                    </p>
-
-                                    <img src="<?php echo $sTemplateURL; ?>/img/photographer.png" alt="people" />
-                                </div><!-- #welcome-->
-                            </div><!-- #banner-->
+                            <?php include (TEMPLATEPATH.'/inc/banner.php'); ?>
                             <div id="post_content">
                                 <ul class="nav nav-tabs" id="myTab" >
                                     
