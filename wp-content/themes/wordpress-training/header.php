@@ -26,7 +26,7 @@ define('HTML_MODE', (!empty($_GET['htmlmode']) ? '' : '.min') );
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
         <script src="<?php echo get_bloginfo( 'stylesheet_directory' ); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
         <div id="container">
         <header>
             <section class="container">

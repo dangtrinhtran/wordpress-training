@@ -381,7 +381,15 @@ top: -30px; right: 46px;
 }
 
 /******POST CONTENT*********/
-
+.tooltip {
+    display: none;
+    position: absolute;
+    background: #ddd;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px;
+    width: 500px;
+}
 #main #content #post_content {
     margin-top: 4px;
     padding-bottom:66px;
@@ -484,6 +492,7 @@ top: -30px; right: 46px;
     margin-right: 21px;
     width: 222px;
     float: left;
+    height: 250px;
 }
 
 #main #content #post_content .tab-content .tab-pane .post-item li:nth-child(3n+0) {
@@ -495,6 +504,8 @@ top: -30px; right: 46px;
     behaviour: url(border-radius.htc);
     padding: 5px;
     background: #e9e6df;
+    width: 211px;
+    height: 102px;
 }
 
 #main #content #post_content .tab-content .tab-pane .post-item a h3{
